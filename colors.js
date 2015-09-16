@@ -92,6 +92,8 @@
       ctx.clearRect(0, 0, h.width, h.height);
       ctx.drawImage(image, 0, 0, image.width, image.height);
 
+      console.log(image);
+
       var data = ctx.getImageData(0, 0, image.width, image.height);
 
       var worker = new Worker('worker.js');
@@ -300,6 +302,7 @@
     e.canvas.elements.c.height = e.canvas.elements.block.clientHeight;
 
     var image = new Image();
+    image.crossOrigin = 'anonymous'; // Allows CORS
     image.src = e.form.elements.url.value;
     image.onload = event => {
       newImage(image);
