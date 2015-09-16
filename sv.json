@@ -1,0 +1,15 @@
+{
+  "generalError": "Något blev fel med valet utav bild",
+  "colorBoxBody": {
+    "mainHeader": "De {} genererade kulörerna",
+    "changed": "De ändrade färgerna"
+  },
+  "form": {
+    "url": "URL",
+    "number": "Antal kulörer",
+    "update": "Uppdatera"
+  },
+  "button": {
+    "reset": "Återställ paletten"
+  }
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Colors</title>
+  <link rel="Shortcut Icon" href="icon.ico" type="image/x-icon" />
+  <link href="colors.css" rel="stylesheet" />
+  <script src="colors.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <section class="main">
+    <section class="block">
+      <section class="block block--form">
+        <form action="">
+          <label for="url">
+            <template>{{form.url}}</template>
+          </label>
+          <input
+            type="text"
+            class="input input--url"
+            name="url"
+            id="url"
+            value="colors.png" />
+
+          <label for="number">
+            <template>{{form.number}}</template>
+          </label>
+
+          <input
+            type="number"
+            class="input input--number"
+            name="number"
+            id="number"
+            value="10" />
+
+          <input
+            class="button button--update"
+            type="submit"
+            id="update"
+            template="value"
+            value="{{form.update}}" />
+        </form>
+      </section>
+
+
+      <section class="block block--color">
+        <ul class="colors">
+          <!-- ColorBoxBody -->
+        </ul>
+      </section>
+
+      <section class="block block--palette">
+        <form action="">
+          <ul class="colors">
+            <!-- PaletteBody -->
+          </ul>
+          <input
+            type="submit"
+            id="reset"
+            class="button button--reset"
+            template="value"
+            value="{{button.reset}}"></input>
+        </form>
+      </section>
+    </section>
+
+    <section class="block block--canvas">
+      <canvas id="canvas"></canvas>
+    </section>
+
+  </section>
+</body>
+
+</html>

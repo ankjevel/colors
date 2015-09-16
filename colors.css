@@ -1,0 +1,185 @@
+body {
+  font: 13px/1.4 "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+  color: rgb(40,49,56);
+  background: #8E8E93;
+}
+
+html,
+body,
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.main {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  /*overflow: hidden;*/
+  display: block;
+}
+
+template {
+  display: inline-block;
+}
+template, [template] {
+  color: transparent !important;
+}
+
+img {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+}
+input {
+  margin: 2px auto;
+  display: block;
+}
+h2 {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1em;
+  margin: 4px;
+  padding: 0;
+}
+h3 {
+  margin: 4px;
+  padding: 0 26px 0 0;
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+ul, ul li {
+  list-style: none;
+}
+
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button {
+  border: 0;
+  margin: 20px 0 30px;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  padding: 2px 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+  .button--update {
+    background-color: #57dc76;
+  }
+  .button--reset {
+    background-color: #ff2d55;
+  }
+
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.block {
+  display: inline-block;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-grow: 0;
+  padding: 0;
+  margin: 0;
+}
+  .block--form {
+    flex-basis: 170px;
+  }
+
+  .block--canvas {
+    flex-basis: 100%;
+    flex-shrink: 10;
+  }
+
+  .block--canvas canvas {
+    cursor: crosshair;
+  }
+
+  .block--color,
+  .block--palette {
+    flex-basis: 150px;
+    width: 150px;
+  }
+
+  .block--palette {}
+    .block--palette ul {
+      margin: 10px 0;
+    }
+
+    .block--palette .chip {
+      margin: 8px 4px;
+    }
+    .block--palette .chip,
+    .block--palette .chip span {
+      width: 40px;
+      height: 40px;
+    }
+      .block--palette .chip span {
+        line-height: 40px;
+        font-size: 16px;
+      }
+
+.box {
+
+}
+  .box--container {
+    background: rgba(255,255,255,.7);
+  }
+  .box--super {
+    background: url('bg.png') top left repeat;
+  }
+
+.input {
+  display: block;
+}
+  .input--url,
+  .input--number {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+.colors {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chip {
+  display: inline-block;
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  margin: 6px;
+  border: 2px solid transparent;
+}
+  .chip.active {
+    border: 2px solid white;
+  }
+  .chip span {
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 900;
+    display: block;
+    vertical-align: bottom;
+    pointer-events: none;
+  }
